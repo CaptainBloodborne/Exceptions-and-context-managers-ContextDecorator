@@ -1,7 +1,8 @@
 ### Exceptions and context managers ContextDecorator
 ***
 Create a context manager `LogFile` inherited from `ContextDecorator` 
-which adds the following information into a log file:
+which adds text lines into a log file.
+Every text line must contain the following information:
 - date and time when started (`Start:`)
 - execution time (`Run:`)
 - error information (in the code wrapped by context manager) (`An error occured:`)
