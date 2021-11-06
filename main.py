@@ -25,4 +25,3 @@ class LogFile(ContextDecorator):
             self.end = datetime.datetime.now()
             f.write(f'Run: {str(self.end - self.start)} | ')
             f.write(f"An error occurred: {exc_val}\n")
-            return True
